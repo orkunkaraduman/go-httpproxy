@@ -12,7 +12,6 @@ curl --proxy-insecure -x "https://test:1234@localhost:8443" http://httpbin.org/g
 
 Connect through HTTPS proxy to HTTPS with MITM:
 curl --proxy-insecure --insecure -x "https://test:1234@localhost:8443" https://httpbin.org/get?a=b
-
 */
 package main
 
@@ -27,7 +26,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/go-httpproxy/httpproxy"
+	"github.com/orkunkaraduman/go-httpproxy"
 )
 
 var logErr = log.New(os.Stderr, "ERR: ", log.LstdFlags)
